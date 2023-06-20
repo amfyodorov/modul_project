@@ -1,0 +1,3 @@
+﻿  Client2.cpp
+C:\AIP\Client2\Client2.cpp(77,59): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  Client2.vcxproj -> C:\AIP\Client2\x64\Debug\Client2.exe

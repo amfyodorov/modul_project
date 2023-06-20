@@ -1,0 +1,7 @@
+﻿  server.cpp
+C:\AIP\server\server.cpp(14,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\AIP\server\server.cpp(71,56): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\AIP\server\server.cpp(72,56): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\AIP\server\server.cpp(105,58): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\AIP\server\server.cpp(106,58): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  server.vcxproj -> C:\AIP\server\x64\Debug\server.exe
