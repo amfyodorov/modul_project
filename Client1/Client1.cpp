@@ -41,7 +41,7 @@ int main()
     serverAddress.sin_port = htons(8888);
 
     // Преобразование IP-адреса с помощью InetPton
-    if (InetPtonA(AF_INET, "127.0.0.1", &(serverAddress.sin_addr)) <= 0)
+    if (InetPtonA(AF_INET, "26.167.78.228", &(serverAddress.sin_addr)) <= 0)
     {
         std::cerr << "Некорректный IP-адрес!" << std::endl;
         closesocket(clientSocket);
@@ -71,6 +71,10 @@ int main()
     std::cout << "Введите число от 0 до 100: ";
     int guess;
     std::cin >> guess;
+    while (guess > 100 | guess < 0) {
+        std::cout << "Вы ввели неверное число, повторите ввод" << std::endl;
+        std::cin >> guess;
+    }
 
     // Отправка числа на сервер
     std::string message = NumberToString<int>(guess);

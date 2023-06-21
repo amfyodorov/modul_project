@@ -71,6 +71,10 @@ int main()
     std::cout << "Введите число от 0 до 100: ";
     int guess;
     std::cin >> guess;
+    while (guess > 100 | guess < 0) {
+        std::cout << "Вы ввели неверное число, повторите ввод" << std::endl;
+        std::cin >> guess;
+    }
 
     // Отправка числа на сервер
     std::string message = NumberToString<int>(guess);
